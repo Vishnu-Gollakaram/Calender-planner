@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Schedule Planner</title>
+  </head>
+  <body>
+    <h1>Plan Your Schedule</h1>
+    <form action="{{ url_for('plan_schedule') }}" method="post">
+      <label for="start_time">Start Time:</label>
+      <input type="text" id="start_time" name="start_time" required>
+      <br>
+      <label for="end_time">End Time:</label>
+      <input type="text" id="end_time" name="end_time" required>
+      <br>
+      <label for="activities">Activities (separated by commas):</label>
+      <input type="text" id="activities" name="activities" required>
+      <br>
+      <input type="submit" value="Plan Schedule">
+    </form>
+  </body>
+</html>

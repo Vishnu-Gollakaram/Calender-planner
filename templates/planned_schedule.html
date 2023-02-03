@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Planned Schedule</title>
+  </head>
+  <body>
+    <h1>Planned Schedule</h1>
+    <p>Your schedule from {{ start_time }} to {{ end_time }}:</p>
+    <ul>
+      {% for activity in activities %}
+        <li>{{ activity }}</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
